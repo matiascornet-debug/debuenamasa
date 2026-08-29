@@ -1,114 +1,114 @@
-/* Importar Petit Formal Script */
-@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
-/* Importar Merriweather */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-/* Importar Outfit */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Importación de Fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Petit+Formal+Script&display=swap');
 
-/* Diseño de Marca en header */
-header h1{
-  color:#F5E8CE;
-  font-size: 4rem;
-  font-family: "Petit Formal Script", sans-serif;
-  font-weight: 1000;
-  font-style: inherit;
-}
-
-header a{
-  font-family: "Merriweather", sans-serif;
-  color: #F5E8CE;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-main{
-  background-color: white;
-}
-main h3{
-  font-family: "Merriweather", sans-serif;
-  font-weight: 800;
-  font-size: 25px;
-}
-main p{
-  font-family: "Outfit", sans-serif;
-  font-size: 20px;
-}
-main ul{
-  font-family: "Outfit", sans-serif;
-  font-size: 20px;
-}
-
-main ol{
-  font-family: "Outfit", sans-serif;
-    font-size: 20px;
-}
-ol li::marker{
-  font-weight: 600 ;
-}
-
-
-figcaption{
-  font-family: "Outfit";
-    font-size: 15px;
-}
-
-footer{
-  background-color: #4D1C00;
-  font-family: "Merriweather", sans-serif;
-  color: white;
-  font-weight: 600;
-}
-footer a{
-  color: white
-}
-footer ul{
-  list-style: none;
-}
-
-/* List Styles */
-/* Sacar ITEM a las ul */
-header ul{
-  list-style: none; 
-}
+/* Estilos de Header y Navegación */
 
 .backgroundimage{
   background: url(../assets/backgroundimage.jpg);
   background-size: cover;
 }
 
+header h1{
+  color: #F5E8CE;
+  font-size: 5rem;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 700;
+  font-style: inherit;
+}
+
+header ul{
+  list-style: none; 
+}
+
+header a{ 
+  font-family: "Merriweather", serif;
+  color: #F5E8CE;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Estilos Principales y Secciones */
+
+main{
+  background-color: white;
+}
+
 .primer-frase{
-  font-family: "Merriweather", sans-serif;
-  font-weight: 1000;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
   font-size: 35px;
 }
+
+.presentacion-de-pagina {
+  background: #ccbea3;
+}
+
+main h3{
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+main p, 
+main ul, 
+main ol{
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}
+
+ol li::marker{
+  font-weight: 600;
+}
+
+figcaption{
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+
+article{
+  background-color: #ffe9bc;
+  color: #0f0f0f;
+}
+
+form{
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+/* Estilos Específicos de Recetas */
+
 .receta{
   background-color: #ffe9bc;
   font-size: 20px;
 }
+
 .nombre-receta{
-  background-color:#b89a39;
+  background-color: #b89a39;
   color: azure;
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-size: 30px;
 }
 
-article{
-  background-color: #ffe9bc ;
-  color:#0f0f0f;
-}
-article h4{
-  background-color:#b89a39;
+article h4{ 
+  background-color: #b89a39;
   color: azure;
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-size: 20px;
 }
 
-form{
-  font-family: "Merriweather";
-  font-weight: 700;
+/* Pie de Página */
+
+footer{
+  background-color: #4D1C00;
+  font-family: "Merriweather", serif;
+  color: white;
+  font-weight: 600;
 }
 
-.presentacion-de-pagina{
-  background:#ccbea3;
+footer a{
+  color: white;
 }
 
+footer ul{
+  list-style: none;
+}
