@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Buena Masa | Contactos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../assets/alimento.png">
+
 </head>
 <body>
-    <header>
+    <header class="backgroundimage">
         <!-- HEADER: Encierra todo lo que va que tener el encabezado, menu, contacto, nosotros, blog, tienda,  -->
         <!-- HEADER generalmente se repite en todos los archivos -->
 
         <!-- H1: Para titulo principal -->
+         <img src="../assets/debuenamasalogo.PNG" alt="Logo De Buena MASA">
          <h1>De Buena Masa</h1>
-         <p>El Verdadero Sabor del Pan</p> 
 
          <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./menu.html">Menu</a></li>
                 <li><a href="./masamadre.html">Masa Madre</a></li>
                 <li><a href="./recetas.html">Recetas</a></li>
                 <li><a href="./blog.html">Blog</a></li>
@@ -27,9 +29,10 @@
     </header>
     <main>
         <section>
-            <h2>Ponte en contacto con nosotros</h2>
-            <p>¿Tienes alguna duda sobre nuestros panes, pedidos especiales o talleres? Escríbenos y te responderemos a la brevedad.</p>
-        
+            <div class="presentacion-de-pagina">
+                <h2 class="primer-frase">Ponte en contacto con nosotros</h2>
+                <p>¿Tienes alguna duda sobre nuestros panes, pedidos especiales o talleres? Escríbenos y te responderemos a la brevedad.</p>
+            </div>
             <article>
                 <form action="">
                     <label for="nombreyapellido">Nombre y Apellido</label>
@@ -40,11 +43,8 @@
                     <textarea name="" id="tumensaje"></textarea>
                     <input type="submit" value="Enviar">
                 </form>
-                </article>
-                <article>
                 <figure>
                     <img src="../assets/panaderia.jpg" alt="Cocinando panes en un horno industrial">
-                    <figcaption>El corazón de nuestro pan</figcaption>
                 </figure>
             </article>
         </section>
