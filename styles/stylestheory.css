@@ -1,0 +1,56 @@
+/* Sintaxis */
+/* Selector: Elemento que quiero modificar */
+/* Propiedad: Aspecto que quiero modificar el selector (tamaño, fondo, color, alto, ancho, tipografia */
+/* Valor: Como quiero modificar el Aspecto */
+
+selector{
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+}
+
+/* Tipos de Selectores */
+/* Etiqueta */
+header{
+  propiedad: valor;
+}
+p{
+
+}
+/* Clases: Poner un punto antes del class */
+/* Recomendasion usar class para CSS */
+.card{
+
+}
+/* ID: Colocar # previo al ID*/
+/* Sirve para nombrar bloques, sino tendriamos muchos */
+#boton{
+
+}
+
+/* Herencia*/
+/* En este ejemplo dice que: todos los <a> dentros de <nav> tienen la propiedad con el valor indicado */
+nav a{
+  color: blue;
+}
+
+/* Cascada */
+/* Los parrafos quedarian rosas por que es el ultimo por orden de cascada */
+p{
+  color: green
+}
+p{
+  color: pink
+}
+
+/* Precedencia */
+/* Por jerariquia, siempre el id>class>elemento*/
+/* Salvo el !important, supera todas las jerariquias, el !important entrar en el valor de la propiedad*/
+p{
+  background-color: yellow !important;
+}
+
+/* Los styles: en linea "matan" todo. */ 
+
+/* BACKGORUND con Imagenes */
+
