@@ -1,26 +1,6 @@
-/* Importación de Fuentes de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Petit+Formal+Script&display=swap');
-
-/* Reset Universal de Box Model */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilos de Header y Navegación Flexbox */
-
-header {
-  background: url(../assets/backgroundimage.jpg);
-  background-size: cover;
-  background-position: center;
-  border-bottom: 2px solid rgba(245, 232, 206, 0.3);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-}
+/* =========================================
+   1. ESTILOS BASE Y COMPONENTES (MOBILE-FIRST)
+   ========================================= */
 
 .header-brand {
   display: flex;
@@ -43,12 +23,12 @@ header h1 {
 header nav ul {
   list-style: none;
   display: flex;
+  flex-direction: column; /* Apilado en mobile */
   gap: 15px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* Botones del Nav */
-
 header a { 
   font-family: "Merriweather", serif;
   color: #F5E8CE;
@@ -57,10 +37,10 @@ header a {
   background-color: #4D1C00;
   padding: 8px 16px;
   border-radius: 6px;
+  text-decoration: none;
 }
 
-/* Estilos Principales y Secciones Flexbox */
-
+/* Estilos Principales y Secciones Flexbox (Mobile Base) */
 main {
   background-color: #fcfcfc;
   padding: 40px 20px;
@@ -144,7 +124,6 @@ form {
 }
 
 /* Estilos Específicos de Recetas */
-
 .receta {
   background-color: #ffe9bc;
   font-size: 20px;
@@ -162,7 +141,6 @@ form {
 }
 
 /* Pie de Página */
-
 footer {
   background-color: #4D1C00;
   font-family: "Merriweather", serif;
@@ -178,11 +156,69 @@ footer {
 
 footer a {
   color: white;
+  text-decoration: none;
 }
 
 footer ul {
   list-style: none;
   display: flex;
   gap: 15px;
+}
+
+
+/* =========================================
+   2. BREAKPOINT DE ESCRITORIO (min-width: 1024px)
+   Maquetación Avanzada con CSS Grid y Áreas
+   ========================================= */
+@media (min-width: 1024px) {
+
+  /* Header horizontal en desktop */
+  header.backgroundimage,
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  /* Grid Maestro para el index.html usando áreas */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+      "hero hero"
+      "razones aprende";
+    gap: 30px; /* Uso de gap exigido por rúbrica */
+  }
+
+  /* Vinculación de las secciones con las áreas del Grid */
+  .presentacion-de-pagina {
+    grid-area: hero;
+  }
+
+  /* Primera sección de artículo (¿Por qué elegir la Masa Madre?) */
+  main > section:nth-of-type(2) {
+    grid-area: razones;
+    margin-bottom: 0;
+  }
+
+  /* Sección Aprende con Nosotros */
+  #aprendeconnosotros {
+    grid-area: aprende;
+    margin-bottom: 0;
+  }
+
+  /* Páginas adicionales (como masamadre.html) organizadas en columnas fluidas con fr */
+  body:has(main > section:nth-of-type(3)) main {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-areas: none; /* Layout fluido automático para páginas con varios artículos */
+  }
 }
 

@@ -1,75 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Buena Masa</title>
+    <!-- Enlaces a fuentes de Google Fonts (opcional pero recomendado para mantener tu tipografía) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800;900&family=Outfit:wght@400;600&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./assets/alimento.png">
 </head>
 <body>
-<header class="backgroundimage">
-    <!-- Agrupamos Imagen y Título en un contenedor Flex -->
-    <div class="header-brand">
-        <img src="./assets/debuenamasalogo.PNG" alt="Logo De Buena MASA">
-        <h1>De Buena Masa</h1>
-    </div>
 
-    <!-- El menú quedará empujado hacia la derecha automáticamente gracias a justify-content: space-between -->
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/masamadre.html">Masa Madre</a></li>
-            <li><a href="./pages/recetas.html">Recetas</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <li><a href="./pages/contactos.html">Contactos</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="backgroundimage">
+        <!-- Agrupamos Imagen y Título en un contenedor Flex -->
+        <div class="header-brand">
+            <img src="./assets/debuenamasalogo.PNG" alt="Logo De Buena MASA">
+            <h1>De Buena Masa</h1>
+        </div>
 
-         <main>
-            <section class="presentacion-de-pagina">
-            <h2 class="primer-frase">
-                El Verdadero Sabor del Pan
-            </h2>
-            <p>Un blog dedicado al mundo del pan de masa madre, con recetas, consejos y técnicas para preparar panes caseros y disfrutar de su auténtico sabor.</p>
-            </section>
-            
-            <section>
-                <article>
-                    <h3>¿Por que elegir la Masa Madre?</h3>
-                    <figure>
-                        <img src="./assets/masamadre.PNG" alt="Frasco con mada madre">
-                        <figcaption>La masa madre y los beneficios de la fermentación lenta</figcaption>
-                    </figure>  
-                    <ul>
-                        <li>100% natural: Solo harina, agua y sal. Sin ultraprocesados ni conservantes.</li>
-                        <li>Súper digerible: Fermentación lenta que reduce el gluten y no cae pesado.</li>
-                        <li>Sabor artesanal: Miga alveolada, corteza crujiente y perfil gastronómico único.</li>
-                        <li>Mayor durabilidad: Se conserva fresco más días de forma totalmente natural.</li>
-                        <li>Energía inteligente: Menor índice glucémico para una nutrición más equilibrada.</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section id="aprendeconnosotros">
-                <article>
-                    <h3>Aprende con Nosotros</h3>
-                        <p>Guías paso a paso, trucos de horneo y la ciencia detrás del pan para dominar la fermentación natural en tu propia cocina.</p>
-                        <figure>
-                            <img src="./assets/panaderia2.jpg" alt="Muchos panes artesanales en gondolas">
-                            <figcaption>Técnicas, consejos y secretos para preparar deliciosos panes de masa madre en casa.</figcaption>
-                        </figure>
-                </article>
-            </section>
-         </main>
-         <footer>
-            <p>© 2026 De Buena Masa - Panadería Artesanal. Todos los derechos reservados.</p>
-            <p>Siguenos</p>
+        <!-- Menú de navegación -->
+        <nav>
             <ul>
-                <li><a href="https://www.instagram.com/?hl=en" target="_blank" >Nuestro instagram</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/masamadre.html">Masa Madre</a></li>
+                <li><a href="./pages/recetas.html">Recetas</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="./pages/contactos.html">Contactos</a></li>
             </ul>
-         </footer>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección 1: Hero (Área 'hero') -->
+        <section class="presentacion-de-pagina">
+            <h2 class="primer-frase">El Verdadero Sabor del Pan</h2>
+            <p>Un blog dedicado al mundo del pan de masa madre, con recetas, consejos y técnicas para preparar panes caseros y disfrutar de su auténtico sabor.</p>
+        </section>
+        
+        <!-- Sección 2: Razones (Área 'razones') -->
+        <section>
+            <article>
+                <h3>¿Por qué elegir la Masa Madre?</h3>
+                <figure>
+                    <img src="./assets/masamadre.PNG" alt="Frasco con masa madre">
+                    <figcaption>La masa madre y los beneficios de la fermentación lenta</figcaption>
+                </figure>  
+                <ul>
+                    <li><strong>100% natural:</strong> Solo harina, agua y sal. Sin ultraprocesados ni conservantes.</li>
+                    <li><strong>Súper digerible:</strong> Fermentación lenta que reduce el gluten y no cae pesado.</li>
+                    <li><strong>Sabor artesanal:</strong> Miga alveolada, corteza crujiente y perfil gastronómico único.</li>
+                    <li><strong>Mayor durabilidad:</strong> Se conserva fresco más días de forma totalmente natural.</li>
+                    <li><strong>Energía inteligente:</strong> Menor índice glucémico para una nutrición más equilibrada.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Sección 3: Aprende con Nosotros (Área 'aprende') -->
+        <section id="aprendeconnosotros">
+            <article>
+                <h3>Aprende con Nosotros</h3>
+                <p>Guías paso a paso, trucos de horneo y la ciencia detrás del pan para dominar la fermentación natural en tu propia cocina.</p>
+                <figure>
+                    <img src="./assets/panaderia2.jpg" alt="Muchos panes artesanales en góndolas">
+                    <figcaption>Técnicas, consejos y secretos para preparar deliciosos panes de masa madre en casa.</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 De Buena Masa - Panadería Artesanal. Todos los derechos reservados.</p>
+        <p>Síguenos</p>
+        <ul>
+            <li><a href="https://www.instagram.com/?hl=en" target="_blank">Nuestro Instagram</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
