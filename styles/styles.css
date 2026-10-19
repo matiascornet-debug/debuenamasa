@@ -222,3 +222,74 @@ footer ul {
   }
 }
 
+/* =========================================
+   ESTADOS INTERACTIVOS Y TRANSICIONES SUAVES
+   ========================================= */
+
+/* Transiciones globales para elementos interactivos */
+a, button, .card, article, header a {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Links y botones del Navbar y sitio con estados interactivos */
+header a.nav-link, 
+footer a, 
+header a {
+    font-family: "Merriweather", serif;
+    color: #F5E8CE !important;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #4D1C00;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a.nav-link:hover,
+header a:hover,
+footer a:hover {
+    background-color: #b89a39;
+    color: #ffffff !important;
+    transform: translateY(-2px); /* Pequeño levante interactivo */
+}
+
+header a.nav-link:focus,
+header a:focus {
+    outline: 3px solid #faedcd;
+    outline-offset: 2px;
+}
+
+header a.nav-link:active,
+header a:active {
+    transform: translateY(0);
+    background-color: #381300;
+}
+
+/* Tarjetas y artículos interactivos */
+article, .receta {
+    background-color: #ffe9bc;
+    color: #0f0f0f;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover, .receta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(77, 28, 0, 0.15);
+}
+
+/* Personalización del botón hamburguesa de Bootstrap para que combine */
+.navbar-toggler {
+    border-color: #F5E8CE !important;
+    background-color: #4D1C00 !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(2);
+}
+
