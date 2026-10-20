@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+
+header a, header a.nav-link {
+  font-family: $font-serif;
+  color: $color-texto-claro !important;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: $color-principal;
+  padding: 8px 16px;
+  border-radius: $border-radius-md;
+  text-decoration: none;
+  display: inline-block;
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: $color-secundario;
+    color: $color-blanco !important;
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: 3px solid $color-texto-claro;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: translateY(0);
+    background-color: darken($color-principal, 10%);
+  }
+}

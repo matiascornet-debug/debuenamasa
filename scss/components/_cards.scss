@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+article, .receta {
+  background-color: $color-fondo-tarjeta;
+  color: $color-texto-oscuro;
+  padding: 25px;
+  border-radius: $border-radius-lg;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: $transition-fast;
+
+  &:hover {
+    transform: translateY(-4px);
+    @include box-shadow-hover;
+  }
+
+  h4 {
+    background-color: $color-secundario;
+    color: azure;
+    font-family: $font-serif;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: $border-radius-sm;
+  }
+}
+
+.presentacion-de-pagina {
+  background: $color-fondo-destacado;
+  padding: 30px;
+  border-radius: $border-radius-lg;
+
+  @media (min-width: 1024px) {
+    grid-area: hero;
+  }
+}
+
+.nombre-receta {
+  background-color: $color-secundario;
+  color: azure;
+  font-family: $font-serif;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: $border-radius-sm;
+}

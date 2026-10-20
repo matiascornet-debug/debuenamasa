@@ -1,0 +1,24 @@
+@use "../utilities/variables" as *;
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+// Personalización del Navbar de Bootstrap
+.navbar-toggler {
+  border-color: $color-texto-claro !important;
+  background-color: $color-principal !important;
+
+  .navbar-toggler-icon {
+    filter: invert(1) brightness(2);
+  }
+}

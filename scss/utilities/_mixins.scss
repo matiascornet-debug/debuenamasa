@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+// Mixin para flexbox centrado o ajustado
+@mixin flex-center($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// Mixin para sombreado suave interactivo
+@mixin box-shadow-hover {
+  box-shadow: 0 8px 20px rgba(77, 28, 0, 0.15);
+}
