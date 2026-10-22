@@ -1,99 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Buena Masa | Recetas </title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- SEO Local -->
+    <title>De Buena Masa | Recetas de Pan de Campo e Integral</title>
+    <meta name="description" content="Paso a paso para preparar hogazas de pan de campo tradicional e integral con semillas usando masa madre. Tiempos, ingredientes y porcentajes de panadero.">
+    <meta name="keywords" content="receta pan de campo, hogaza integral semillas, receta masa madre, autolisis, hornear en dutch oven">
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800;900&family=Outfit:wght@400;600&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../assets/alimento.png">
-
 </head>
-<body>
-    <header class="backgroundimage">
-        <div class="header-brand">
-            <img src="../assets/debuenamasalogo.PNG" alt="Logo De Buena MASA">
-            <h1>De Buena Masa</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./masamadre.html">Masa Madre</a></li>
-                <li><a href="#">Recetas</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>
+<body class="page-internal">
+    <header>
+        <nav class="navbar navbar-expand-lg py-2">
+            <div class="container-fluid">
+                <a class="navbar-brand header-brand text-decoration-none" href="../index.html">
+                    <img src="../assets/debuenamasalogo.PNG" alt="Logo De Buena Masa panadería artesanal">
+                    <h1>De Buena Masa</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./masamadre.html">Masa Madre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./recetas.html">Recetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section>
+        <section data-aos="fade-up">
             <div class="presentacion-de-pagina">
-                <h2 class="primer-frase">Nuestra Recetas</h2>
+                <h2 class="primer-frase">Nuestras Recetas Guiadas</h2>
+                <p>Fórmulas probadas con porcentajes de panadero para lograr la miga perfecta en tu hogar.</p>
             </div>
-            <article class="receta">
+
+            <article class="receta" data-aos="fade-right">
                 <h3 class="nombre-receta">Hogaza Tradicional de Campo</h3>
                 <figure>
-                    <img src="../assets/hogaza.jpg" alt="Una hogaza de pan artesanal de masa madre, cortada por la mitad">
-                    <figcaption>Seccion de una hogaza de pan cortada por la mitad</figcaption>
+                    <img src="../assets/hogaza.jpg" alt="Hogaza de pan de campo artesanal cortada por la mitad mostrando la miga">
+                    <figcaption>Corteza crujiente y miga alveolada lograda con 70% de hidratación.</figcaption>
                 </figure>
                 <h4>Ingredientes</h4>
                 <ul>
                     <li>Harina de trigo 000 (o de fuerza): 500 g</li>
-                    <li>Agua (tibia o a temperatura ambiente): 350 g (70% de hidratación)</li>
-                    <li>Masa madre activa (al pico de fermentación): 100 g (20%)</li>
+                    <li>Agua tibia: 350 g (70% de hidratación)</li>
+                    <li>Masa madre activa: 100 g (20%)</li>
                     <li>Sal fina: 10 g (2%)</li>
                 </ul>
                 <h4>Paso a Paso</h4>
                 <ol>
-                    <li>Autólisis: Mezcla la harina y 325 g de agua en un bol hasta que no quede harina seca. Cubre y deja reposar durante 30 a 45 minutos.</li>
-                    <li>Incorporación: Agrega la masa madre activa y amasa suavemente hasta integrar. Añade los 25 g de agua restantes junto con la sal. Amasa hasta obtener una masa uniforme.</l>
-                    <li>Fermentación en bloque y pliegues: Cubre el bol. Durante las primeras 2 horas, realiza 4 tandas de pliegues (estirando los bordes hacia el centro) cada 30 minutos. Luego, deja reposar la masa hasta que aumente un 30-50% su volumen.</li>
-                    <li>Formado: Vuelca la masa sobre una superficie ligeramente enharinada, dales forma redonda (hogaza) generando tensión en la superficie y colócala en un banetón o bol con un repasador enharinado.</li>
-                    <li>Fermentación en frío: Llévala a la heladera (4 °C) entre 12 y 18 horas para desarrollar sabor y estructura.</li>
-                    <li>Horneado: Precalienta el horno a 230 °C con una olla de hierro (Dutch oven) dentro. Vuelca el pan sobre papel manteca, realiza un corte profundo (greña) en la parte superior e introdúcelo en la olla. Hornea con tapa durante 20 minutos, luego quita la tapa, baja a 200 °C y hornea 20-25 minutos más hasta dorar la corteza.</li>
-                    <li>Enfriado: Deja enfriar completo sobre una rejilla antes de cortar.</li>
+                    <li><strong>Autólisis:</strong> Mezcla harina y 325 g de agua. Deja reposar 40 minutos.</li>
+                    <li><strong>Incorporación:</strong> Integra la masa madre, sal y los 25 g de agua restantes.</li>
+                    <li><strong>Fermentación en bloque:</strong> Realiza 4 tandas de pliegues cada 30 minutos durante las primeras 2 horas.</li>
+                    <li><strong>Formado y frío:</strong> Da forma de hogaza, coloca en banetón y lleva a la heladera (4 °C) durante 14 horas.</li>
+                    <li><strong>Horneado:</strong> Hornea en olla Dutch Oven a 230 °C (20 min con tapa y 20 min sin tapa a 200 °C).</li>
                 </ol>
             </article>
 
-            <article class="receta">
+            <article class="receta" data-aos="fade-left">
                 <h3 class="nombre-receta">Hogaza Integral con Semillas</h3>
                 <figure>
-                    <img src="../assets/hogaza_integral.jpg" alt="Hogaza de pan integral con semillas rebanada">
-                    <figcaption>Hogaza de pan integral rebanada sobre una tela</figcaption>
+                    <img src="../assets/hogaza_integral.jpg" alt="Rebanadas de hogaza integral repletas de semillas tostadas">
+                    <figcaption>Pan nutritivo con mezcla de semillas de girasol, sésamo, lino y zapallo.</figcaption>
                 </figure> 
                 <h4>Ingredientes</h4>
                 <ul>
                     <li>Harina integral de trigo: 300 g</li>
-                    <li>Harina de trigo 000 (de fuerza): 200 g</li>
+                    <li>Harina 000 de fuerza: 200 g</li>
                     <li>Agua: 375 g (75% de hidratación)</li>
                     <li>Masa madre activa: 100 g (20%)</li>
                     <li>Sal fina: 10 g (2%)</li>
-                    <li>Mix de semillas (girasol, sésamo, lino, zapallo): 80 g (más extra para decorar)</li>
+                    <li>Mix de semillas hidratadas: 80 g</li>
                 </ul>
                 <h4>Paso a Paso</h4>
                 <ol>
-                    <li>Activación de semillas: Hidrata el mix de semillas en 50 g de agua tibia durante 20 minutos antes de empezar y escúrrelas bien.</li>
-                    <li>Autólisis: Mezcla las dos harinas con los 375 g de agua. Deja reposar tapado durante 45 minutos para ablandar la fibra del trigo integral.</li>
-                    <li>Integración: Agrega la masa madre activa y mezcla bien. Añade la sal e integra hasta tener una masa homogénea.</li>
-                    <li>Inclusión de semillas y pliegues: Durante las primeras 2 horas de fermentación, realiza 3 tandas de pliegues cada 30 minutos. En el segundo pliegue, distribuye las semillas hidratadas sobre la masa para incorporarlas de forma uniforme.</li>
-                    <li>Fermentación en bloque: Deja reposar la masa a temperatura ambiente hasta que crezca alrededor de un 40% y se note aireada.</li>
-                    <li>Formado y rebozado: Da forma de hogaza generando buena tensión superficial. Pasa la parte superior por un paño húmedo y luego sobre un plato con semillas extra para que se peguen a la corteza. Coloca en un banetón enharinado.</li>
-                    <li>Retardo en frío: Guarda en la heladera (4 °C) de 12 a 16 horas.</li>
-                    <li>Horneado: Precalienta el horno a 230 °C con olla de hierro dentro. Realiza un corte (greña) al pan, colócalo en la olla y hornea tapado durante 25 minutos. Destapa, baja la temperatura a 200 °C y hornea 20 minutos más hasta que las semillas estén tostadas y la corteza crujiente.</li>
-                    <li>Enfriado: Deja enfriar por completo en rejilla antes de rebanar.</li>
+                    <li><strong>Hidratación de semillas:</strong> Remoja las semillas en agua tibia durante 20 minutos.</li>
+                    <li><strong>Autólisis e integración:</strong> Mezcla harinas y agua por 45 minutos antes de incorporar la masa madre y sal.</li>
+                    <li><strong>Inclusión:</strong> Incorpora las semillas en el segundo pliegue de la fermentación.</li>
+                    <li><strong>Horneado:</strong> Hornea tapado a 230 °C por 25 minutos y destapa para dorar la corteza.</li>
                 </ol>
             </article>
         </section>
     </main>
-        <footer>
-            <p>© 2026 De Buena Masa - Panadería Artesanal. Todos los derechos reservados.</p>
-            <p>Siguenos</p>
-            <ul>
-                <li><a href="https://www.instagram.com/?hl=en" target="_blank" >Nuestro instagram</a></li>
-            </ul>
-         </footer>
-    
-<!-- Bootstrap JS Bundle (Popper + JS) -->
+
+    <footer>
+        <p>© 2026 De Buena Masa - Panadería Artesanal. Todos los derechos reservados.</p>
+        <p>Síguenos en redes sociales:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener">Nuestro Instagram</a></li>
+        </ul>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+form {
+  font-family: $font-title;
+  font-weight: 700;
+  @include flex-center(column, flex-start, stretch, 15px);
+  padding: 20px;
+  background-color: $color-bg-card;
+  border-radius: 8px;
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: $font-body;
+    font-size: 1rem;
+
+    &:focus {
+      outline: 2px solid $color-secondary;
+      border-color: transparent;
+    }
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: $color-primary;
+    color: $color-text-light;
+    font-family: $font-title;
+    font-weight: 700;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+  }
+}

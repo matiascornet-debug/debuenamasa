@@ -1,0 +1,36 @@
+@use '../utilities/variables' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Evita cualquier scroll horizontal accidental */
+}
+
+body {
+  background-color: $color-bg-light;
+  font-family: $font-body;
+  color: $color-text-dark;
+}
+
+/* Regla fluida obligatoria para todas las imágenes y figuras */
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+}
+
+a, button, article, .receta {
+  transition: all 0.3s ease-in-out;
+}

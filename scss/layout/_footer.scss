@@ -1,31 +1,27 @@
-@use "../utilities/variables" as *;
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
 
 footer {
-  background-color: $color-principal;
-  font-family: $font-serif;
-  color: $color-blanco;
+  background-color: $color-primary;
+  font-family: $font-title;
+  color: white;
   font-weight: 600;
   padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  @include flex-center(column, center, center, 15px);
   text-align: center;
 
   a {
-    color: $color-blanco;
+    color: white;
     text-decoration: none;
-    transition: $transition-fast;
 
     &:hover {
-      color: $color-secundario;
-      transform: translateY(-2px);
+      color: $color-secondary;
     }
   }
 
   ul {
     list-style: none;
-    display: flex;
-    gap: 15px;
+    @include flex-center(row, center, center, 15px);
+    padding-left: 0;
   }
 }

@@ -1,20 +1,17 @@
-// Paleta de Colores
-$color-principal: #4D1C00;
-$color-secundario: #b89a39;
-$color-fondo-claro: #fcfcfc;
-$color-fondo-tarjeta: #ffe9bc;
-$color-fondo-destacado: #ccbea3;
-$color-texto-oscuro: #0f0f0f;
-$color-texto-claro: #F5E8CE;
-$color-blanco: #ffffff;
+// SCSS Variables: Color Palette & Typography
+$color-primary: #4D1C00;
+$color-primary-dark: #381300;
+$color-secondary: #b89a39;
+$color-bg-light: #fcfcfc;
+$color-bg-card: #ffe9bc;
+$color-bg-hero: #ccbea3;
+$color-text-dark: #0f0f0f;
+$color-text-light: #F5E8CE;
+$color-accent: #faedcd;
 
-// Tipografías
-$font-script: "Petit Formal Script", cursive;
-$font-serif: "Merriweather", serif;
-$font-sans: "Outfit", sans-serif;
+$font-title: 'Merriweather', serif;
+$font-body: 'Outfit', sans-serif;
+$font-brand: 'Petit Formal Script', cursive;
 
-// Medidas y Bordes
-$border-radius-sm: 4px;
-$border-radius-md: 6px;
-$border-radius-lg: 8px;
-$transition-fast: all 0.3s ease-in-out;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

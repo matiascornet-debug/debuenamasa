@@ -1,18 +1,10 @@
-// Archivo maestro de entrada SCSS
-
-// 1. Utilidades (Variables y Mixins)
-@use "utilities/variables" as *;
-@use "utilities/mixins" as *;
-
-// 2. Estilos Base
-@use "base/base";
-@use "base/tipografia";
-
-// 3. Estructura / Layout
-@use "layout/header";
-@use "layout/nav";
-@use "layout/footer";
-
-// 4. Componentes
-@use "components/buttons";
-@use "components/cards";
+// Main SCSS entrypoint - ONLY IMPORTS WITH @use
+@use 'utilities/variables';
+@use 'utilities/mixins';
+@use 'base/reset';
+@use 'components/navbar';
+@use 'components/cards';
+@use 'components/forms';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/main_layout';

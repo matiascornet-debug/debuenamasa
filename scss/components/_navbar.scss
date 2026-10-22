@@ -1,0 +1,63 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// Bootstrap Navbar Styling Override via SCSS
+.navbar {
+  background-color: $color-primary !important;
+  padding: 0.8rem 1.5rem;
+
+  .header-brand {
+    @include flex-center(row, flex-start, center, 15px);
+    
+    img {
+      max-height: 55px;
+      width: auto;
+    }
+
+    h1 {
+      color: $color-text-light;
+      font-size: 2.2rem;
+      font-family: $font-brand;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+
+  .nav-link {
+    font-family: $font-title;
+    color: $color-text-light !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    background-color: $color-primary;
+    padding: 8px 16px !important;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+    }
+
+    &:focus {
+      outline: 3px solid $color-accent;
+      outline-offset: 2px;
+    }
+
+    &:active {
+      transform: translateY(0);
+      background-color: $color-primary-dark;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $color-text-light !important;
+    background-color: $color-primary !important;
+
+    .navbar-toggler-icon {
+      filter: invert(1) brightness(2);
+    }
+  }
+}

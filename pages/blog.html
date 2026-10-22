@@ -1,74 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Buena Masa | Blog</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- SEO Local -->
+    <title>De Buena Masa | Blog y Consejos de Panadería</title>
+    <meta name="description" content="Artículos de divulgación sobre conservación del pan casero, bioquímica de la fermentación lenta y tips para mantener la corteza crujiente.">
+    <meta name="keywords" content="blog de panaderia, conservar pan de masa madre, acido fitico, lactobacillus, congelar pan casero">
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800;900&family=Outfit:wght@400;600&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../assets/alimento.png">
 </head>
-<body>
-    <header class="backgroundimage">
-        <div class="header-brand">
-            <img src="../assets/debuenamasalogo.PNG" alt="Logo De Buena MASA">
-            <h1>De Buena Masa</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./masamadre.html">Masa Madre</a></li>
-                <li><a href="./recetas.html">Recetas</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>
+<body class="page-internal">
+    <header>
+        <nav class="navbar navbar-expand-lg py-2">
+            <div class="container-fluid">
+                <a class="navbar-brand header-brand text-decoration-none" href="../index.html">
+                    <img src="../assets/debuenamasalogo.PNG" alt="Logo De Buena Masa panadería artesanal">
+                    <h1>De Buena Masa</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./masamadre.html">Masa Madre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./recetas.html">Recetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section>
+        <section data-aos="fade-up">
             <div class="presentacion-de-pagina">
-                <h2 class="primer-frase">Blog & Secretos de Fermentacion</h2>
-                <p>Guías, consejos y ciencia sobre el mundo del pan artesanal</p>
+                <h2 class="primer-frase">Blog & Secretos de Fermentación</h2>
+                <p>Guías, secretos y ciencia explicada para amantes del pan verdadero.</p>
             </div>
-            <article class="notiblog">
-                <h3>Cómo conservar tu pan de masa madre para que dure toda la semana</h3>
-                <p>Hiciste un pan de masa madre increíble, duró crujiente el primer día, ¿y ahora qué? Saber cómo guardarlo es el verdadero secreto para no desperdiciar ni una sola miga.</p>
+
+            <article class="notiblog" data-aos="fade-right">
+                <h3>Cómo conservar tu pan para que dure toda la semana</h3>
+                <p>Hiciste un pan de masa madre increíble, duró crujiente el primer día, ¿y ahora qué? Saber guardarlo es el verdadero secreto para no desperdiciar nada.</p>
                 <figure>
-                    <img src="../assets/muchospanes.PNG" alt="Muchos panes amontonados">
-                    <figcaption>El secreto de un buen guardado: dejar enfriar por completo sobre rejilla antes de empaquetar para evitar que la humedad ablande la corteza.</figcaption>
+                    <img src="../assets/muchospanes.PNG" alt="Panes artesanales amontonados sobre una mesa de trabajo">
+                    <figcaption>Dejar enfriar por completo sobre rejilla antes de empaquetar evita que la humedad ablande la corteza.</figcaption>
                 </figure>
-                <p>Entre la clásica bolsa de tela —la favorita de los puristas para los primeros días— y el congelado por rebanadas —el truco definitivo para tener pan recién horneado a demanda—, existen diferencias clave según tu ritmo de consumo. Guardar la corteza intacta o conservar la miga suave depende del método que elijas, y hoy te contamos cuál te conviene usar.</p>
+                <p>Entre la clásica bolsa de tela para los primeros días y el congelado por rebanadas en bolsas herméticas, existen técnicas clave para mantener tanto la miga suave como la corteza en su punto justo.</p>
             </article>
 
-            <article class="notiblog">
+            <article class="notiblog" data-aos="fade-left">
                 <h3>¿Por qué la fermentación lenta sienta mejor a la digestión?</h3>
-                <p>Durante las 24 horas de fermentación lenta de la masa madre, las bacterias lácticas (Lactobacillus) y las levaduras salvajes trabajan en sinergia para transformar la composición del grano mediante dos procesos químicos fundamentales:</p>
+                <p>Durante las 24 horas de fermentación, las bacterias Lactobacillus y levaduras salvajes transforman la masa mediante dos procesos biológicos:</p>
                 <ol>
-                    <li>Pre-digestión de almidones</li>
-                    <ul>
-                        <li>Acción enzimática: Las enzimas amilasas (activadas por el ambiente ácido) descomponen las largas y complejas cadenas de almidón del trigo.</li>
-                        <li>Transformación en azúcares simples: Los almidones se reducen a moléculas más sencillas (maltosa y glucosa), las cuales alimentan a los propios microorganismos.</li>
-                        <li>Impacto digestivo: Al llegar al estómago, gran parte de los carbohidratos ya han sido procesados, lo que reduce la carga de trabajo del páncreas y suaviza la curva del índice glucémico.</li>
-                    </ul>
-                    <li>Degradación del ácido fítico (desbloqueo de minerales)</li>
-                    <ul>
-                        <li>El problema del ácido fítico: Presente de forma natural en el salvado de los cereales, actúa como un "antinutriente" que se une a minerales esenciales (hierro, zinc, magnesio y calcio) e impide que nuestro cuerpo los absorba.</li>
-                        <li>Activación de la fitasa: La acidificación progresiva de la masa durante el leudado prolongado activa la enzima fitasa, presente en el propio grano.</li>
-                        <li>Liberación de nutrientes: La fitasa rompe las moléculas de ácido fítico hasta en un 90%, liberando los minerales para que queden totalmente biodisponibles para el organismo.</li>
-                    </ul>
+                    <li><strong>Pre-digestión de almidones:</strong> Las amilasas descomponen los carbohidratos complejos en azúcares simples, reduciendo la carga de trabajo estomacal.</li>
+                    <li><strong>Degradación del ácido fítico:</strong> La acidificación activa la enzima fitasa, eliminando hasta un 90% del ácido fítico y liberando minerales esenciales como hierro, zinc y magnesio.</li>
                 </ol>
             </article>
         </section>
-
     </main>
-        <footer>
-            <p>© 2026 De Buena Masa - Panadería Artesanal. Todos los derechos reservados.</p>
-            <p>Siguenos</p>
-            <ul>
-                <li><a href="https://www.instagram.com/?hl=en" target="_blank" >Nuestro instagram</a></li>
-            </ul>
-         </footer>
-<!-- Bootstrap JS Bundle (Popper + JS) -->
+
+    <footer>
+        <p>© 2026 De Buena Masa - Panadería Artesanal. Todos los derechos reservados.</p>
+        <p>Síguenos en redes sociales:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener">Nuestro Instagram</a></li>
+        </ul>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>
